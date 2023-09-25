@@ -1,0 +1,21 @@
+{
+  "functions": { 
+    "source": ".output/server" 
+  },
+  "hosting": {
+    "site": "gamercafe-web",
+    "public": ".output/public",
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "server"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
