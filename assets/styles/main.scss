@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import "@fortawesome/fontawesome-svg-core/styles.css";
+@import "open-props/style";
+
+@import "open-props/normalize";
+@import "open-props/buttons";
+
+@import "open-props/normalize/dark";
+@import "open-props/buttons/dark";
+@import "open-props/normalize/light";
+@import "open-props/buttons/light";
+
+@import "open-props/easings";
+@import "open-props/animations";
+@import "open-props/sizes";
+@import "open-props/gradients";
+
+@import "_vars.scss";
+@import "_settings.scss";
+
+.header-logo{
+  height: 100px;
+  width: 650px;
+}
+.footer-logo{
+  height: 59px;
+  width: 392px;
+}
+
+@keyframes bg-scrolling {
+  0% {
+    background-position: -80px 240px;
+  }
+}

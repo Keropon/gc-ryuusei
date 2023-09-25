@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "ryuusei",
   "private": true,
   "scripts": {
     "build": "nuxt build",
@@ -10,6 +10,23 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.7.1"
+    "@nuxtjs/apollo": "^5.0.0-alpha.6",
+    "@nuxtjs/color-mode": "^3.3.0",
+    "@nuxtjs/html-validator": "^1.5.2",
+    "@types/node": "^20.6.0",
+    "@vueuse/nuxt": "^10.4.1",
+    "nuxt": "^3.7.1",
+    "nuxt-svgo": "^3.5.3",
+    "sass": "^1.66.1",
+    "typescript": "^5.2.2",
+    "vue-tsc": "^1.8.10"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "open-props": "^1.5.15"
   }
 }

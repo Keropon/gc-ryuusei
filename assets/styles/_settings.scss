@@ -1,0 +1,73 @@
+:root{
+  --brand: var(--gc-main-color);
+  --font-display: var(--gc-font-family);
+  --font-sans: var(--gc-font-family-alt);
+  --bg-color: var(--gc-light-bg-color);
+  --text-color: var(--gc-light-text-color);
+  --link-color: var(--gc-main-color);
+}
+
+@media (prefers-color-scheme: dark){
+  :root{
+    --brand: var(--gc-light-color);
+    --bg-color: var(--gc-dark-bg-color);
+    --text-color: var(--gc-dark-text-color);
+  }
+}
+
+@media (prefers-color-scheme: retro){
+  :root{
+    --bg-color: var(--gc-retro-bg-color);
+    --text-color: var(--gc-retro-text-color);
+  }
+}
+
+[color-scheme="dark"]{
+  color-scheme: dark;
+}
+
+[color-scheme="retro"]{
+  color-scheme: dark;
+  color-scheme: retro;
+  --bg-color: var(--gc-retro-bg-color);
+  --text-color: var(--gc-retro-text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  accent-color: var(--link);
+}
+h1,h2,h3,h4,p,dt,h5,h6,small,dd {
+  color: var(--default-text-color);
+}
+
+// Background Colors
+.bg-default{ 
+  background: var(--bg-color);
+}
+.bg-gc{
+  background-color: var(--gc-main-color);
+}
+.bg-podcast{
+  background-color: var(--gc-podcast-color);
+}
+.bg-live{
+  background-color: var(--gc-live-color);
+}
+.bg-stream{
+  background-color: var(--gc-stream-color);
+}
+.bg-kofi{
+  background-color: var(--gc-kofi-color);
+}
+.bg-patreon{
+  background-color: var(--gc-patreon-color);
+}
+.bg-spotify{
+  background-color: var(--gc-spotify-color);
+}
+.bg-discord{
+  background-color: var(--gc-discord-color);
+}
+
