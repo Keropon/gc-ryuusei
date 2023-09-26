@@ -1,10 +1,12 @@
 <template>
   <section :class="['banner', 'deckbanner', bgClass]">
     <header class="header">
-      <PostTypeIcon class="header-icon" :fontControlled="false" filled/>
-      <h5 :class="['title', textClass]">
-        {{ title }}
-      </h5>
+      <slot name="header">
+        <PostTypeIcon class="header-icon" :fontControlled="false" filled v-if="props.posttype_icon"/>
+        <h5 :class="['title', textClass]">
+          {{ title }}
+        </h5>
+      </slot>
     </header>
     <div class="content">
       <ul class="deck" :v-if="posts">

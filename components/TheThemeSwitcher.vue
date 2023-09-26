@@ -7,9 +7,6 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue'
-  import { useColorMode } from '@vueuse/core'
-
   const colorMode = useColorMode()
   const themeIndex = ref(0)
   const themes = ['system', 'light', 'dark', 'retro']
@@ -27,3 +24,18 @@
     icon.value = iconClasses[themeIndex.value]
   }
 </script>
+
+<style lang="scss">
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0;
+    color: var(--color-primary-text);
+    &:hover {
+      color: var(--color-primary);
+    }
+    box-shadow: none;
+  }
+</style>

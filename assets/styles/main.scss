@@ -32,3 +32,32 @@
     background-position: -80px 240px;
   }
 }
+
+a.hover-active{
+  position: relative;
+  z-index: 1;
+  &::after {
+    background-color: var(--gc-main-color-dark);
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -.5em;
+    right: -.5em;
+    z-index: -1;
+    transform: skew(350deg, 356deg);
+    transition: 1s;
+  }
+  &:hover {
+    &::after {
+      display: block;
+    }
+  }
+  &:not(.single){
+    &::after{
+      left: -1em;
+      right: -2em;
+    }
+  }
+}

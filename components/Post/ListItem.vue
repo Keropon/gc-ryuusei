@@ -5,21 +5,15 @@
       <NuxtLink :to="{ name: 'slug', params: { slug: post.slug } }">
         <h2 class="post-listitem-title">{{ post.title }}</h2>
       </NuxtLink>
-      <div v-html="post.excerpt" />
-      <NuxtLink :to="{ name: 'slug', params: { slug: post.slug } }">
-        Leer más
-      </NuxtLink>
-      <div>
-        <ul class="post-listitem-metadata">
-          <li>{{ post.author.name }}</li>
-          <li>{{ post.date }}</li>
-          <li>
-            <ul class="post-listitem-tags">
-              <li v-for="tag in post.tags">{{ tag.name }}</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+      <ul class="post-listitem-metadata">
+        <li>{{ post.author.name }}</li>
+        <li>{{ post.date }}</li>
+        <li>
+          <ul class="post-listitem-tags">
+            <li v-for="tag in post.tags">{{ tag.name }}</li>
+          </ul>
+        </li>
+      </ul>
     </div>
   </article>
 </template>
