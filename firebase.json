@@ -1,6 +1,7 @@
 {
   "functions": {
-    "source": ".output/server"
+    "source": "server",
+    "runtime": "nodejs18"
   },
   "hosting": {
     "public": ".output/public",
