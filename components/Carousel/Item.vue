@@ -1,6 +1,6 @@
 
 <template>
-  <div>
+  <div class="carousel-item">
     <NuxtLink to="item.url">
       <h3 v-show="false">{{ item.title }}</h3>
       <img

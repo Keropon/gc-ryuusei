@@ -68,21 +68,41 @@
 
 <style lang="scss">
   .carousel{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 170px;
-    max-width: 1200px;
-    margin: calc(50vh - (170px) / 2) auto;
+    display: grid;
+    width: calc(100% + 4rem);
+    padding: 1rem 2rem 1.5rem 2rem;
+    margin: 0 -2rem;
+    grid-template-columns: repeat(auto, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 1rem;
     overflow: hidden;
+    overflow-x: auto;
+    background-color: var(--gc-main-color-dark);
+    transform: rotate(-4deg) skew(-8deg);
     &-wrapper{
       position: relative;
-      top: 0;
-      left: 0;
-      display: flex;      
-      pointer-events: none;
-      gap: var(--gap);
+      display: flex;
+      justify-content: space-between;
+    }
+    &-item{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 170px;
+      height: 170px;
+      transition: all .3s ease-in-out;
+      &:hover{
+        transform: scale(1.2);
+      }
+      &-title{
+        font-size: 1.5rem;
+        margin: 0;
+      }
+      &-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 </style>
